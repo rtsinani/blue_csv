@@ -29,7 +29,7 @@ csv << ["Title", "Author"]
 end
 ```
 
-Your controller code would like this:
+Your controller code would look like this:
 
 ```shell
 def index
