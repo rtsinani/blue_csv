@@ -7,11 +7,11 @@ require "blue_csv/version"
 Gem::Specification.new do |s|
   s.name        = "blue_csv"
   s.version     = BlueCsv::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BlueCsv."
-  s.description = "TODO: Description of BlueCsv."
+  s.authors     = ["Artan Sinani"]
+  s.email       = ["artisinani@gmail.com"]
+  s.homepage    = "https://github.com/rtsinani/blue_csv"
+  s.summary     = "Renders CSV files as view templates."
+  s.description = "Renders CSV files as view templates."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
