@@ -2,7 +2,7 @@ require 'action_controller'
 require 'csv'
 
 ActionController::Renderers.add :csv do |filename, options|
-  filename += "-#{Time.now.strftime("%Y%m%d%M%S")}.csv"
+  filename << "-#{Time.now.strftime("%Y%m%d%M%S")}.csv"
 
   if request.env['HTTP_USER_AGENT'] =~ /msie/i
     headers['Pragma']               = 'public'

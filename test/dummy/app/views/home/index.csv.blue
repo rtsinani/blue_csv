@@ -1,1 +1,5 @@
-csv << ["Test", "Column 2"]
+csv << ["Title", "Author"]
+
+@books.each do |book|
+  csv << [book.title, book.author]
+end
