@@ -5,7 +5,7 @@ Write CSV files as if they were normal view templates and they will be downloade
 
 - Add the following to your app's Gemfile
 
-```shell
+```ruby
 gem 'blue-csv'
 ```
 
@@ -21,7 +21,7 @@ gem install blue-csv
 
 The plugin exposes the object `csv` in your view templates, so you can write in your `index.csv.blue`:
 
-```shell
+```ruby
 csv << ["Title", "Author"]
 
 @books.each do |book|
@@ -31,7 +31,7 @@ end
 
 Your controller code would look like this:
 
-```shell
+```ruby
 def index
   @books = Book.all
   respond_to do |format|
